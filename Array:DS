@@ -1,0 +1,9 @@
+int* reverseArray(int a_count, int* a, int* result_count) {
+*result_count=a_count;
+int i;
+int *arr = malloc(a_count * sizeof(int));
+for(i=0;i<a_count;i++){
+    arr[i]=a[a_count-i-1];
+}
+return arr;
+}
